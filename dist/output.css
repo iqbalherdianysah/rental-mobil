@@ -568,40 +568,12 @@ video {
   position: relative;
 }
 
-.-bottom-60 {
-  bottom: -15rem;
-}
-
-.-bottom-64 {
-  bottom: -16rem;
-}
-
-.bottom-full {
-  bottom: 100%;
-}
-
-.bottom-96 {
-  bottom: 24rem;
-}
-
-.-bottom-96 {
-  bottom: -24rem;
-}
-
 .-bottom-80 {
   bottom: -20rem;
 }
 
-.-bottom-1\/3 {
-  bottom: -33.333333%;
-}
-
-.-bottom-3\/4 {
-  bottom: -75%;
-}
-
-.-bottom-full {
-  bottom: -100%;
+.-bottom-96 {
+  bottom: -24rem;
 }
 
 .-z-10 {
@@ -646,16 +618,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(192 95 49 / var(--tw-border-opacity));
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-primary {
@@ -722,24 +684,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:border-primary:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(192 95 49 / var(--tw-border-opacity));
-}
-
-.hover\:border-black:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:text-black:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -752,28 +699,16 @@ video {
     position: relative;
   }
 
+  .md\:-bottom-10 {
+    bottom: -2.5rem;
+  }
+
   .md\:-bottom-32 {
     bottom: -8rem;
   }
 
   .md\:-right-52 {
     right: -13rem;
-  }
-
-  .md\:-bottom-10 {
-    bottom: -2.5rem;
-  }
-
-  .md\:-bottom-96 {
-    bottom: -24rem;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:text-2xl {
@@ -793,20 +728,16 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-bottom-10 {
+    bottom: -2.5rem;
+  }
+
   .lg\:-bottom-40 {
     bottom: -10rem;
   }
 
   .lg\:right-0 {
     right: 0px;
-  }
-
-  .lg\:-bottom-60 {
-    bottom: -15rem;
-  }
-
-  .lg\:-bottom-10 {
-    bottom: -2.5rem;
   }
 
   .lg\:mt-9 {
