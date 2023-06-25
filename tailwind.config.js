@@ -2,6 +2,9 @@
 module.exports = {
 	content: ["./src/**/*.{html,js}"],
 	theme: {
+		fontFamily: {
+			'rubik': ['Rubik', 'sans-serif'],
+		},
 		extend: {
 			colors: {
 				primary: "#C05F31",
