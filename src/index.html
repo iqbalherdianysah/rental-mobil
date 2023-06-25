@@ -1,201 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Rental Mobil</title>
-		<link rel="stylesheet" href="../dist/output.css" />
-	</head>
 
-	<body>
-		<!-- Navbar -->
-		<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-			<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-				<a href="#" class="flex items-center">
-					<img src="../assets/icons/iconhome.svg" class="h-8 mr-3" alt="V-Rent Logo" />
-					<!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
-				</a>
-				<div class="flex md:order-2">
-					<button
-						type="button"
-						class="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-					>
-						Sign In
-					</button>
-					<button
-						type="button"
-						class="text-white bg-primary hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-					>
-						Register
-					</button>
-					<button
-						data-collapse-toggle="navbar-sticky"
-						type="button"
-						class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-						aria-controls="navbar-sticky"
-						aria-expanded="false"
-					>
-						<span class="sr-only">Open main menu</span>
-						<svg
-							class="w-6 h-6"
-							aria-hidden="true"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rental Mobil</title>
+	<link rel="stylesheet" href="../dist/output.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+		<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<a href="#" class="flex items-center">
+				<img src="../assets/icons/iconhome.svg" class="h-8 mr-3" alt="V-Rent Logo">
+				<!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+			</a>
+			<div class="flex md:order-2">
+				<button type="button"
+					class="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign
+					In</button>
+				<button type="button"
+					class="text-white bg-primary hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
+				<button data-collapse-toggle="navbar-sticky" type="button"
+					class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+					aria-controls="navbar-sticky" aria-expanded="false">
+					<span class="sr-only">Open main menu</span>
+					<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd"
+							d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+							clip-rule="evenodd"></path>
+					</svg>
+				</button>
+			</div>
+			<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+				<ul
+					class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+					<li>
+						<a href="#"
+							class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+					</li>
+					<li>
+						<a href="#"
+							class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+					</li>
+					<li>
+						<a href="#"
+							class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Vehicle
+							Models</a>
+					</li>
+					<li>
+						<a href="#"
+							class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Book</a>
+					</li>
+					<li>
+						<a href="#"
+							class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+	<br>
+	<!-- Hero section start -->
+	<section id="home" class="pt-36">
+		<div class="container">
+			<div class="flex flex-wrap">
+				<div class="w-full self-center px-4 lg:w-1/3">
+					<h1 class="text-xl font-bold md:text-2xl">Plan your Trip</h1>
+					<h1 class="text-4xl font-bold md:text-6xl">Save <span class="text-primary">much</span> with our rental</h1>
+					<p class="font-medium text-grey-text mb-10 leading-relaxed mt-5 md:text-black">Rent your dream car. Low prices. Drive anywhere. easy pick-up option and more</p>
+					<a href="#" class="bg-primary text-white p-2 text-sm rounded-full font-semibold hover:bg-white hover:text-primary">Book Now</a>
+				</div>
+				<div class="w-full self-end px-4 lg:w-2/3">
+				   <div class="relative mt-10 lg:mt-9">
+					<img src="/assets/images/rush.png" alt="toyota rush" class="max-w-full absolute -bottom-80 md:relative md:-bottom-10 lg:-bottom-10">
+					<span class="absolute -bottom-96 -z-10 lg:right-0 lg:-bottom-40 md:-bottom-32 md:-right-52">
+						<img src="/assets/images/Rectangle 2.png" alt="rectangle">
+					</span>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+	<!--plan your trip - Hadis-->
+	<section id="process" class="w-full">
+		<div class="container py-10">
+			<div class="text-center">
+				<h1 class="text-xl sm:text-2xl lg:text-3xl font-medium mb-2">Plan Your Trip</h1>
+				<h2 class="text-3xl sm:text-5xl lg:text-6xl font-medium">Quick & easy process</h2>
+			</div>
+
+			<div class="content flex flex-col sm:flex-row sm:mt-8 lg:mt-16 text-center gap-4 sm:gap-6">
+				<div class="content-select-car flex flex-col items-center py-10 gap-5">
+					<div>
+						<img class="w-20 h-20 lg:w-full lg:h-full" src="../assets/icons/process-icon-car1.svg" alt="icon-car1">
+					</div>
+					<h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold">Select Car</h3>
+					<p class="text-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore explicabo voluptates assumenda iste temporibus possimus dolores enim omnis excepturi.</p>
+				</div>
+
+				<div class="m-auto">
+					<img class="w-7 rotate-90 sm:w-24 sm:rotate-0" src="../assets/icons/arrow.svg" alt="">
+				</div>
+
+				<div class="content-select-car flex flex-col items-center py-10 gap-5">
+					<div>
+						<img class="w-20 h-20 lg:w-full lg:h-full" src="../assets/icons/process-icon-cs.svg" alt="icon-car1">
+					</div>
+					<h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold">Contact Us</h3>
+					<p class="text-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore explicabo voluptates assumenda iste temporibus possimus dolores enim omnis excepturi.</p>
+				</div>
+
+				<div class="m-auto">
+					<img class="w-7 rotate-90 sm:w-24 sm:rotate-0" src="../assets/icons/arrow.svg" alt="">
+				</div>
+
+				<div class="content-select-car flex flex-col items-center py-10 gap-5">
+					<div>
+						<img class="w-20 h-20 lg:w-full lg:h-full" src="../assets/icons/process-icon-car2.svg" alt="icon-car1">
+					</div>
+					<h3 class="text-2xl sm:text-3xl lg:text-4xl font-semibold">Let's Drive</h3>
+					<p class="text-grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe tempore explicabo voluptates assumenda iste temporibus possimus dolores enim omnis excepturi.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--plan your trip end - Hadis-->
+	<br>
+	<!-- Footer container -->
+	<footer class="mb-4 bg-white text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+		<!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
+		<div class="mx-6 py-10 text-center md:text-left">
+			<div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+				<!-- section -->
+				<div class="">
+					<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+						<img src="../assets/icons/iconvrent.svg" class="h-8 mr-3" alt="V-Rent Logo">
+					</h6>
+					<p class="mb-4">
+						We offers a big range of vehicles for all your driving needs. We have the perfect car to meet
+						your needs.
+					</p>
+					<p class="mb-4 flex items-center justify-center md:justify-start">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+							class="mr-3 h-5 w-5">
 							<path
-								fill-rule="evenodd"
-								d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-								clip-rule="evenodd"
-							></path>
+								d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+							<path
+								d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
 						</svg>
-					</button>
+						info@mail.com
+					</p>
+					<p class="mb-4 flex items-center justify-center md:justify-start">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+							class="mr-3 h-5 w-5">
+							<path fill-rule="evenodd"
+								d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+								clip-rule="evenodd" />
+						</svg>
+						+ 62xxxxx
+					</p>
 				</div>
-				<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-					<ul
-						class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-					>
-						<li>
-							<a
-								href="#"
-								class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-								>Home</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-								>About</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-								>Vehicle Models</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-								>Book</a
-							>
-						</li>
-						<li>
-							<a
-								href="#"
-								class="hover:underline block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-								>Contact</a
-							>
-						</li>
-					</ul>
+				<!-- Company section -->
+				<div class="">
+					<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+						COMPANY
+					</h6>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">About Us</a>
+					</p>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">Career</a>
+					</p>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">Mobile App</a>
+					</p>
 				</div>
-			</div>
-		</nav>
-		<!-- Navbar End -->
-		<br />
-		<!-- Hero section start -->
-		<section id="home" class="pt-36">
-			<div class="container">
-				<div class="flex flex-wrap">
-					<div class="w-full self-center px-4 lg:w-1/3">
-						<h1 class="text-xl font-bold md:text-2xl">Plan your Trip</h1>
-						<h1 class="text-4xl font-bold md:text-6xl">Save <span class="text-primary">much</span> with our rental</h1>
-						<p class="font-medium text-grey-text mb-10 leading-relaxed mt-5 md:text-black">
-							Rent your dream car. Low prices. Drive anywhere. easy pick-up option and more
-						</p>
-						<a
-							href="#"
-							class="bg-primary text-white p-2 text-sm rounded-full font-semibold hover:bg-white hover:text-primary"
-							>Book Now</a
-						>
-					</div>
-					<div class="w-full self-end px-4 lg:w-2/3">
-						<div class="relative mt-10 lg:mt-9 flex flex-col justify-center">
-							<img
-								src="/assets/images/rush.png"
-								alt="toyota rush"
-								class="max-w-full absolute md:relative md:-bottom-10 lg:-bottom-10"
-							/>
-							<span class="h-[700px] md:absolute md:h-auto -z-10 lg:right-0 lg:-bottom-40 md:-bottom-32 md:-right-52">
-								<img src="/assets/images/Rectangle 2.png" alt="rectangle" />
-							</span>
-						</div>
-					</div>
+				<!-- Working Hours section -->
+				<div class="">
+					<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+						WORKING HOURS
+					</h6>
+					<p class="mb-4">Mon - Fri : 9.00 AM - 9.00 PM</p>
+					<p class="mb-4">Sat - Sun : 9.00 AM - 6.00 PM</p>
+				</div>
+				<!-- Help section -->
+				<div class="">
+					<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+						HELP
+					</h6>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">FAQ</a>
+					</p>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">Terms & Conditions</a>
+					</p>
+					<p class="mb-4">
+						<a href="#!" class="text-neutral-600 dark:text-neutral-200">Privacy Policy</a>
+					</p>
 				</div>
 			</div>
-		</section>
-		<!-- Hero section end -->
-		<br />
-		<!-- Footer container -->
-		<footer class="mb-4 bg-white text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-			<!-- Main container div: holds the entire content of the footer, including four sections (Tailwind Elements, Products, Useful links, and Contact), with responsive styling and appropriate padding/margins. -->
-			<div class="mx-6 py-10 text-center md:text-left">
-				<div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-					<!-- section -->
-					<div class="">
-						<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
-							<img src="../assets/icons/iconvrent.svg" class="h-8 mr-3" alt="V-Rent Logo" />
-						</h6>
-						<p class="mb-4">
-							We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.
-						</p>
-						<p class="mb-4 flex items-center justify-center md:justify-start">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 h-5 w-5">
-								<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-								<path
-									d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
-								/>
-							</svg>
-							info@mail.com
-						</p>
-						<p class="mb-4 flex items-center justify-center md:justify-start">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="mr-3 h-5 w-5">
-								<path
-									fill-rule="evenodd"
-									d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-							+ 62xxxxx
-						</p>
-					</div>
-					<!-- Company section -->
-					<div class="">
-						<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">COMPANY</h6>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">About Us</a>
-						</p>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">Career</a>
-						</p>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">Mobile App</a>
-						</p>
-					</div>
-					<!-- Working Hours section -->
-					<div class="">
-						<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">WORKING HOURS</h6>
-						<p class="mb-4">Mon - Fri : 9.00 AM - 9.00 PM</p>
-						<p class="mb-4">Sat - Sun : 9.00 AM - 6.00 PM</p>
-					</div>
-					<!-- Help section -->
-					<div class="">
-						<h6 class="mb-4 flex justify-center font-semibold uppercase md:justify-start">HELP</h6>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">FAQ</a>
-						</p>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">Terms & Conditions</a>
-						</p>
-						<p class="mb-4">
-							<a href="#!" class="text-neutral-600 dark:text-neutral-200">Privacy Policy</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+</body>
+
 </html>
